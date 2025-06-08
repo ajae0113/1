@@ -201,6 +201,8 @@ function newColour() {
 }
 // ]]>
 </script>
+
+
   <style>
      header {
             text-align: center;
@@ -219,11 +221,12 @@ function newColour() {
               auto !important;
     }
 
-    /* 클릭 가능한 요소 위에 올렸을 때 (링크 등) */
     img, a, button, input, summary,details [type="submit"] {
       cursor: url(https://cur.cursors-4u.net/symbols/sym-7/sym644.ani), 
               url(https://cur.cursors-4u.net/symbols/sym-7/sym644.gif), 
         pointer !important;}
+
+
 @font-face {
     font-family: 'Yak';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/Yak.woff2') format('woff2');
@@ -235,98 +238,182 @@ function newColour() {
   font-weight: 400;
   font-style: normal;
 }
+    
+    
+    }
+
+    html{
+     background-color: #fffdeb;
+    }
+    
 
 body {
   margin: 0;
-  padding: 0;
-  text-align: center;
+  padding: 0;;
   font-family: sans-serif;
-  display: flex;
+  display:
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 뷰포트 전체 높이 */
-  background-color: #f5f5f5; /* 배경색은 예시 */
+  height: 100vh; 
+background-color: #fffdeb;
   overflow-y: auto;
 }
 
+
 .container {
+  
   font-family: 'Yak';
   position: relative;
-  width: 1500px;
+  width: 2000px;
   min-height: 1280px;
   margin: auto;
   padding: 30px 20px;
   background-color: #fffdeb;
   z-index: 2;
   overflow: hidden;
+    text-align: left
 }
+  
+
+      
     .bg-image {
       position: absolute;
-      top: 280px; /* 박스 내부에서 위치 조절 */
+      top: 280px; 
       left: 60%;
       transform: translateX(-50%);
       width: 700px;
-      z-index: ; /* 텍스트보다 뒤로 */
-      pointer-events: none; /* 클릭 방지 */
+      pointer-events: none; 
     }
   .bg-image2 {
       position: absolute;
-      top: 280px; /* 박스 내부에서 위치 조절 */
+      top: 280px; 
       left: 60%;
       transform: translateX(-50%);
       width: 1500px;
-      z-index: 1; /* 텍스트보다 뒤로 */
+      z-index: 0; 
       pointer-events: none; 
     }
 
-    .row {
+    .row1 {
+
+      display: flex;
+      justify-content: space-between;
+      margin-bottom:10px;
+      position: relative;
+  flex-direction: column; 
+}
+    }
+   .row2 {
+      width: 1300px;
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
       position: relative;
-      z-index: ; 
   flex-direction: column; 
   padding: 20px;
 }
-    }
-
+    
+    
     .column {
       width: 60%; 
-      margin: 100px;
-      padding:50px;
+      margin: 10px;
+      padding:80px;
+    
     }
    
-    
-    .title {
-      font-size: 24px;
+       
+    .box1{
+      
+      background-color:#fff2ef;
+      color:#fff2ef;
+      height:5em;
+      border-bottom:5px solid #b9c1d7;
+      border-style: dotted;
+    }
+      .box2{
+      
+      background-color:#fff2ef;
+      color:#fff2ef;
+      height:5em;
+      border-top:5px solid #b9c1d7;
+      border-style: dotted;
+    } 
+    .title1 {
+  
+      font-size: 2em;
       margin-top: 30px;
       margin-bottom:10px;
       font-family: 'Yak';
       color: #9a9aae;
       background-color: #fff2ef;
-      border-radius: 2px;
+      border-radius: 50px;
+
+    }
+   .title2 {
+
+
+      margin-top: 10px;
+      margin-bottom:10px;
+      font-family: 'Yak';
+      color: #9a9aae;
+      background-color: #fff2ef;
+      border-radius: 50px;
       font-size:1.7em;
     }
+  .title3 {
 
+      margin-top: 0px;
+      margin-bottom:10px;
+      font-family: 'Yak';
+      color: #9a9aae;
+      background-color: #fff2ef;
+      border-radius: 50px;
+      font-size:1.7em;
+    }
+      .title4 {
+      margin-bottom:10px;
+      font-family: 'Yak';
+      color: #9a9aae;
+      background-color: #fff2ef;
+   border-radius: 50px;
+      font-size:1.7em;
+    }
+          .title5 {
+ 
+      font-size: 3em;
+      margin-top:px;
+      margin-bottom:10px;
+      font-family: 'Yak';
+      color: #9a9aae;
+      background-color: #fff2ef;
+     border-radius: 50px;
+      font-size:1.7em;
+    }
     .text {
-      font-size: 14px;
+
+      font-size: 1.3em;
       line-height: 1.6;
-      background-color:
-        color: #33353c;
-    }
+      color: #455075;
 
-    .center-title {
+
+    }
+    .center{
+      
 font-family: "Reenie Beanie", cursive;
-      text-align: left;
-      font-size: 10em;
+      text-align: center;
+      font-size: 9em;
       color: #b9c1d7;
-      margin: 310px 0;
-      position: relative;
-      z-index: 2;
+      margin: -60px ;
+      position: top;
+      z-index: 9;
     }
-
+    .top{
+      font-family: "Reenie Beanie", cursive;
+       color: #b9c1d7;
+       font-size: 9em;
+    }
     .link {
-      text-align: left;
+      text-align: center;
       margin-top: 100px;
       font-size: 14px;
       position: relative;
@@ -340,10 +427,10 @@ font-family: "Reenie Beanie", cursive;
 
     summary {
       cursor: pointer;
-      font-size:1.3em;
-      font-family: 'intelone-mono-font-family-regular';
+      font-size:2em;
+      font-family: 'Yak';
    z-index: 3; 
-       z-index: 3; 
+
     }
 
     details[open] summary {
@@ -357,11 +444,11 @@ details {
   
 }
     .idol-card {
-      width: 30%;
+      width: 50%;
       background: #fffdf8;
       border: 1px solid #ccc;
       border-radius: 10px;
-      box-shadow: 2px 2px 5px #cecbb7;
+   
       padding: 10px;
       text-align: center;
        position: relative;
@@ -395,8 +482,10 @@ padding:10px;
     }
  #content {
   display: flex;
+   width: 1500px;
   justify-content: center;
   flex-wrap: nowrap; 
+margin-top: 100px;
   gap: 10px; 
   overflow-x: auto; 
 }
@@ -404,46 +493,80 @@ padding:10px;
     span{
       background-color:#fff2ef;
       color: #9a9aae;
+      border-radius: 50px;
     }
+ 
   </style>
 </head>
 <body>
+  
+  <div class=" box1">Letterbox Overlay</div>
+   
 <header>
     <a href="https://output.jsbin.com/mavidev" target="_blank">
-        <img src="6.png" alt="헤더 이미지">
+        <img src="https://i.imgur.com/jbAfkpU.png" alt="헤더 이미지">
     </a>
+  
     </header>
+  
   <div class="container">
-
+<div class="top">
+     <p>Let our friendship last forever...... Let our friendship last forever...... Let our friendship last forever...... 
+    </div>
    
-    <img class="bg-image2" src="2.png" alt="배경 이미지">
-    <img class="bg-image" src="3.png" alt="배경 이미지">
+  
+    <img class="bg-image2" src="https://i.imgur.com/O39XmIk.png" alt="버블">
+    <img class="bg-image" src="https://i.imgur.com/JzVKoXk.png" alt="배경 이미지">
     
 
-    <div class="row">
+    <div class="row1">
       <div class="column">
-        <div class="title"><strong>3세대 K-POP</strong></div>
-        <div class="text">
-          K-pop에서의 3세대란 기본적으로 2015년 즈음을 가리킨다.<br>
-          2세대에 비해 음악 스타일이 다양해지고 퍼포먼스에서 더욱<br>
-          전략적인 모습을 띄는 것이 특징이다. 또한 발달한 소셜미디어(SNS)를<br>
-          활용한 홍보로 음악 공유가 활발히 일게 되면서,<br>
-          K-pop은 세계무대로 나아가게 되었다.<br>
+        <div class="title1"><strong>3세대 K-POP</strong></div>
+        <div class="text" >
+  K-pop에서의 3세대란 기본적으로 2015년 즈음을 가리킨다.
+          2세대에 비해 음악 스타일이 다양해지고 퍼포먼스에서 더욱
+          전략적인 모습을 띄는 것이 특징이다.<br> 또한 발달한 소셜미디어(SNS)를
+          활용한 홍보로 음악 공유가 활발히 일게 되면서,
+           K-pop은 세계무대로 나아가게 되었다.<br>
         </div>
-             <div class="column">
-        <div class="title"><strong>팬덤의 사회적 참여</strong></div>
+                 <div class="column">
+        <div class="title2"><strong>3세대 K-pop의 음악적 특징</strong></div>
         <div class="text">
-          기부 캠페인, 환경 운동, 사회적 메시지 확산 등에 등장<br>
-          예) 방탄소년단 ‘Love Myself 캠페인’ ~ 아이돌 연대 기부 활동<br>
-          팬덤 이용으로 광고 구매, 지하철 광고, 타임스퀘어 생일 광고 등도 유행
-        </div>
-      </div>
-      </div>
+          <ul>
+          <li> 세계관 중심의 스토리텔링</li>
+EXO는 초능력 설정을 바탕으로, BTS는 ‘화양연화’ 시리즈를 통해 각기 독창적인 세계관을 구축하여 음악과 콘텐츠를 연결함<br>
 
-      <div class="column">
-        <div class="title"><strong>주요 플랫폼</strong></div>
+          <li>음악적 진정성과 자기 고백</li>
+BTS는 멤버들이 직접 작사·작곡에 참여하며 청춘, 사회 문제, 자아 탐색 등의 주제를 진솔하게 담아냄<br>
+
+          <li>장르의 다양성과 실험성</li>
+Red Velvet은 팝과 R&B를 넘나드는 ‘레드’와 ‘벨벳’ 콘셉트를 통해 다양한 음악 스타일을 선보임
+
+          <li>글로벌 협업과 영어 가사 활용</li>
+BLACKPINK와 BTS는 서구 아티스트들과의 협업을 통해 영어 가사를 적극 활용하며 글로벌 시장에 진출함
+
+          <li>SNS 기반의 팬덤 형성과 소통</li>
+유튜브, 트위터, 인스타그램 등을 활용하여 팬들과의 실시간 소통을 강화하고, 팬덤의 자발적인 콘텐츠 생산을 유도함
+
+ </ul>
+        </div>
+
+
+      </div>
+ <div class="column">
+        <div class="title4"><strong>팬덤의 사회적 참여</strong></div>
         <div class="text">
-         
+         <ul>
+      <li>기부 캠페인, 환경 운동, 사회적 메시지 확산 등에 등장<br>
+          예) 방탄소년단 ‘Love Myself 캠페인’ ~ 아이돌 연대 기부 활동<br>
+          <li>팬덤 이용으로 광고 구매, 지하철 광고, 타임스퀘어 생일 광고 등도 유행
+            </ul>
+        </div>
+      </div>
+      <div class="column">
+        <div class="title4"><strong>주요 플랫폼</strong></div>
+        <div class="text">
+         <ul>
         <li> 유튜브 (YouTube)
 뮤직비디오, 자체 콘텐츠 공개
           글로벌 팬 유입 및 대중성 확보 </li>
@@ -463,22 +586,36 @@ padding:10px;
 웹예능 / 자체 리얼리티
 그룹 자체 콘텐츠로 팬덤 결속력 강화
 유튜브 등을 통해 주기적 공개</li>
+          </ul>
+        </div>
+      </div>
+        <div class="column">
+        <div class="title5"><strong>주요 뮤직비디오 키워드</strong></div>
+        <div class="text">
+          <ul> <li>우정, 감성 필터, 초커, 컬러 염색, 네온 사인, 테니스장, Synthwave, Vaporwave, VHS aesthetic ,원색, 핑크색 </li>
+            특히 3세대의 k-pop뮤직 비디오의 재미있는 부분은 Letterbox Overlay 효과를 자주 사용한다는 것이다.<br>
+            화면 위 아래에 색이나 그래픽을 씌워 영화같은 프레임감을 주는 방식이다.
+           위의 키워드를 살펴보면 감성적인 영화를 표현하려고 하는 느낌을 받을 수 있다.
+         </ul>
+          
 
         </div>
       </div>
     </div>
+    </div>
 
-    <div class="center-title">3RD GENERATION K-POP</div>
 
-    <div class="row">
+       <div class="center">3RD GENERATION K-POP</div>      
+
+    <div class="row2">
  
     </div>
 
     <details>
-      <summary><span style="background-color: #343434; color:#e5c6db;">3세대 대표 아이돌</span></summary><br>
-      <div id="content">
+      <summary><span style="background-color: #343434; color:#e5c6db;" >ৎ 3세대 대표 아이돌 ୭ </span></summary><br>
+      <div id="content"> 
         <div class="idol-card">
-          <img src="1.png" alt="BTS">
+          <img src="https://i.imgur.com/uyndkLI.png" alt="BTS">
           <div class="info">
        <strong><span>Artist:</strong> BTS<br>
             <strong><span>Title:</span></strong> 봄날 (Spring Day)<br><br>
@@ -491,7 +628,7 @@ padding:10px;
         </div>
 
         <div class="idol-card">
-          <img src="4.png" alt="BLACKPINK">
+          <img src="https://i.imgur.com/FYZ6U5X.png" alt="BLACKPINK">
           <div class="info">
  <strong><span>Artist:</span></strong> BLACKPINK<br>
 <strong><span>Title:</span></strong> STAY<br><br>
@@ -504,7 +641,7 @@ padding:10px;
         </div>
 
         <div class="idol-card">
-          <img src="5.png" alt="Red Velvet">
+          <img src="https://i.imgur.com/lyr8cgO.png" alt="Red Velvet">
           <div class="info">
 <strong><span>Artist:</span></strong> Red Velvet<br>
 <strong><span>Title:</span></strong> Ice Cream Cake<br><br>
@@ -519,5 +656,7 @@ padding:10px;
     </details>
 
   </div>
+
+    <div class=" box2">Letterbox Overlay</div>
 </body>
 </html>
